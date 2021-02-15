@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  dashboard:
+    container_name: dashboard
+    build: .
+    environment:
+      - NODE_ENV=production
+      - PORT=8080
+      - MONGO_URI=
+      - SESSION_SECRET=
+      - GOOGLE_CLIENT_ID=
+      - GOOGLE_CLIENT_SECRET=
+    ports:
+      - 8080:8080
