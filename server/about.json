@@ -1,0 +1,151 @@
+{
+    "client": {
+        "host": "ip"
+    },
+    "server": {
+        "current_time": 1531680780,
+        "services": [
+            {
+                "name": "WeatherService",
+                "widgets": [
+                    {
+                        "name": "WeatherDynamic",
+                        "description": "This widget allows you to know the weather everywhere in the world.",
+                        "params": [
+                            {
+                                "name": "widget name",
+                                "type": "String"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "WeatherStatic",
+                        "description": "Display the weather for a city",
+                        "params": [
+                            {
+                                "name": "widgetName",
+                                "type": "String"
+                            },
+                            {
+                                "place": "city",
+                                "type": "String"
+                            },
+                            {
+                                "refresh": "second",
+                                "type": "Number"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "FinanceService",
+                "widgets": [
+                    {
+                        "name": "Country Time",
+                        "description": "This widget allows you to know the date and the hour of any country.",
+                        "params": [
+                            {
+                                "select": "crypto",
+                                "type": "String"
+                            },
+                            {
+                                "refresh": "time",
+                                "type": "Array"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "CryptoViewer",
+                        "description": "This widget allows you know the price of a cryptocurrency.",
+                        "params": [
+                            {
+                                "select": "crypto",
+                                "type": "String"
+                            },
+                            {
+                                "select": "currency",
+                                "type": "String"
+                            },
+                            {
+                                "refresh": "time",
+                                "type": "Array"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ExchangesRates",
+                        "description": "This widget allows you know exchange rates between two monies.",
+                        "params": [
+                            {
+                                "select": "currency",
+                                "type": "String"
+                            },
+                            {
+                                "select": "exchange",
+                                "type": "String"
+                            },
+                            {
+                                "refresh": "time",
+                                "type": "Array"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "DofusService",
+                "widgets": [
+                    {
+                        "name": "DofusItemWidget",
+                        "description": "This widget will give you information about a Dofus item.",
+                        "params": [
+                            {
+                                "name": "widgetName",
+                                "type": "String"
+                            },
+                            {
+                                "item": "itemName",
+                                "type": "String"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DofusItemDynamic",
+                        "description": "This widget will give you information about any Dofus item.",
+                        "params": [
+                            {
+                                "name": "widgetName",
+                                "type": "String"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DofusCraftWidget",
+                        "description": "This widget allows you to know the recipe to craft an item.",
+                        "params": [
+                            {
+                                "name": "widgetName",
+                                "type": "String"
+                            },
+                            {
+                                "item": "item",
+                                "type": "String"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DofusCraftDynamic",
+                        "description": "This widget allows you to know the recipe to craft any item.",
+                        "params": [
+                            {
+                                "name": "widgetName",
+                                "type": "String"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

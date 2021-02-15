@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  dashboard:
+    container_name: dashboard
+    build: .
+    environment:
+      - NODE_ENV=production
+      - PORT=8080
+      - MONGO_URI=mongodb+srv://kisho:Z18LZMF4DXQ0tumA@cluster0.wk9bd.mongodb.net/test?retryWrites=true&w=majority
+      - SESSION_SECRET=fheeh7dgfg8sd6dfiuh
+      - GOOGLE_CLIENT_ID=1052850391778-fn2logm61goufmletm2rog0tq0k5d6rl.apps.googleusercontent.com
+      - GOOGLE_CLIENT_SECRET=by_r7AfBTSi4GK3fjVAkcvuy
+    ports:
+      - 8080:8080
